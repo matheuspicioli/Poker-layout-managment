@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{FBE71813-82EC-48EB-AFB9-FEFB50973D33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowManipulator", "WindowManipulator\WindowManipulator.csproj", "{FED52662-7233-4D7B-9B14-BC9705D90C66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBE71813-82EC-48EB-AFB9-FEFB50973D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE71813-82EC-48EB-AFB9-FEFB50973D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE71813-82EC-48EB-AFB9-FEFB50973D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE71813-82EC-48EB-AFB9-FEFB50973D33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED52662-7233-4D7B-9B14-BC9705D90C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED52662-7233-4D7B-9B14-BC9705D90C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED52662-7233-4D7B-9B14-BC9705D90C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED52662-7233-4D7B-9B14-BC9705D90C66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

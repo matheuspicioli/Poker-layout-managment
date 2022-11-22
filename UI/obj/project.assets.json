@@ -1,0 +1,92 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "WindowManipulator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WindowManipulator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WindowManipulator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WindowManipulator/1.0.0": {
+      "type": "project",
+      "path": "../WindowManipulator/WindowManipulator.csproj",
+      "msbuildProject": "../WindowManipulator/WindowManipulator.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "WindowManipulator >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mathe\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Documentos\\PokerLayoutManager\\UI\\UI.csproj",
+      "projectName": "UI",
+      "projectPath": "C:\\Users\\mathe\\OneDrive\\Documentos\\PokerLayoutManager\\UI\\UI.csproj",
+      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mathe\\OneDrive\\Documentos\\PokerLayoutManager\\UI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "C:\\Users\\mathe\\OneDrive\\Documentos\\PokerLayoutManager\\WindowManipulator\\WindowManipulator.csproj": {
+              "projectPath": "C:\\Users\\mathe\\OneDrive\\Documentos\\PokerLayoutManager\\WindowManipulator\\WindowManipulator.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Users\\mathe\\.dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
