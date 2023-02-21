@@ -11,16 +11,21 @@ public class Handler
     private int Height { get; set; } = 356;
     private Process[] Processes { get; set; }
     public int ScreenWidth { get; set; } = 1920;
+
+    public Handler() {
+        this.Width = this.DefaultWidth;
+    }
     
     public Handler GetProcesses()
     {
         // Use Notepad process to easily tests
-        Processes = Process.GetProcessesByName("Notepad");
-        // Processes = Process.GetProcessesByName(EProcess.Pokerstars.ToString())
-            // .Concat(Process.GetProcessesByName(EProcess.GGnet.ToString()))
-            // .ToArray();
+        // Processes = Process.GetProcessesByName("Notepad");
+        this.Processes = Process.GetProcessesByName("PokerStars Client Software")
+            .Concat(Process.GetProcessesByName(EProcess.GGnet.ToString()))
+            .Concat(Process.GetProcessesByName("Bodog.com"))
+            .ToArray();
         
-        if (Processes.Length == 0)
+        if (this.Processes.Length == 0)
         {
             throw new Exception("--- Has no poker window ---");
         }
@@ -30,8 +35,8 @@ public class Handler
 
     public Handler ResetCoordinates()
     {
-        X = 0;
-        Y = 0;
+        this.X = 0;
+        this.Y = 0;
 
         return this;
     }
@@ -55,12 +60,12 @@ public class Handler
 
     public void ResizeWindows()
     {
-        if ((Width = ScreenWidth / Processes.Length) < DefaultWidth)
+        if ((this.Width = this.ScreenWidth / this.Processes.Length) < this.DefaultWidth)
         {
-            Width = DefaultWidth;
+            this.Width = this.DefaultWidth;
         }
         
-        foreach (Process process in Processes)
+        foreach (Process process in this.Processes)
         {
             IntPtr handle = process.MainWindowHandle;
             Rect rect = new Rect();
@@ -70,14 +75,14 @@ public class Handler
             }
             
             // Reset "line"
-            if ((X + Width) > ScreenWidth)
+            if ((this.X + this.Width) > this.ScreenWidth)
             {
-                Y += Height;
-                X = 0;
+                this.Y += this.Height;
+                this.X = 0;
             }
                         
-            ExternalMethods.MoveWindow(handle, X, Y, Width, Height, true);
-            X += Width;
+            ExternalMethods.MoveWindow(handle, this.X, this.Y, this.Width, this.Height, true);
+            this.X += this.Width;
         }
     }
 }

@@ -18,9 +18,9 @@ public partial class MainForm : Form
         Button runProgramButton = new Button();
         runProgramButton.Location = new Point(20, 150);
         runProgramButton.Height = 40;
-        runProgramButton.Width = 300;
-        runProgramButton.Text = "Run program";
-        runProgramButton.Name = "RunProgram";
+        runProgramButton.Width = 150;
+        runProgramButton.Text = "Tile tables";
+        runProgramButton.Name = "TileTables";
         runProgramButton.Click += ButtonRunProgram_Click;
         
         Controls.Add(runProgramButton);
